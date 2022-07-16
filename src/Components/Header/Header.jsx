@@ -10,7 +10,7 @@ const Header = () => {
         <Container>
           <Navbar.Brand href="/">Reed Creative Werx</Navbar.Brand>
           <Nav>
-            <Nav.Link>Software Developer</Nav.Link>
+            <Nav.Link>Software Development</Nav.Link>
             <Nav.Link>Photography</Nav.Link>
           </Nav>
         </Container>
