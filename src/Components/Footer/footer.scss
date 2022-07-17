@@ -1,0 +1,18 @@
+@import "../../Theme/colors.scss";
+
+.footer-container {
+  background-color: $color-dark;
+  color: $color-white;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  min-height: 2.5rem;
+
+  .footer-text {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+  }
+}
