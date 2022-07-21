@@ -6,7 +6,7 @@ import Footer from './Components/Footer/Footer';
 function App() {
   return (
     <div>
-      <h1>Reed Creative Werx</h1>
+      {/* <h1>Reed Creative Werx</h1> */}
       <Header />
       <Footer />
     </div>

@@ -1,1 +1,56 @@
 @import "../../Theme/colors.scss";
+
+.header-container {
+  .header-img {
+    background-image: url("../../Assets/Images/header-img.png");
+    background-size: cover;
+    background-position: center;
+    min-height: 500px;
+    width: 100%;
+    opacity: 40%;
+  }
+
+  .grid-2-col {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    .left,
+    .right {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 300px;
+      text-decoration: none;
+      color: $color-dark;
+    }
+
+    .left {
+      background-color: aqua;
+    }
+
+    .right {
+      background-color: lavender;
+    }
+  }
+
+  .header-intro {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+
+    p:nth-child(1),
+    p:nth-child(2) {
+      margin: 0 auto;
+      padding-bottom: 0.5rem;
+    }
+
+    p:nth-child(1) {
+      font-size: 1.86rem;
+      font-weight: bold;
+    }
+
+    p:nth-child(2) {
+      font-size: 1.2rem;
+    }
+  }
+}
