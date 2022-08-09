@@ -12,8 +12,8 @@ const NavbarComponent = () => {
         <Container>
           <Navbar.Brand href="/">Reed Creative Werx</Navbar.Brand>
           <Nav>
-            <Nav.Link>Software Development</Nav.Link>
-            <Nav.Link>Photography</Nav.Link>
+            <Nav.Link href="/software-development">Software Development</Nav.Link>
+            <Nav.Link href="/photography">Photography</Nav.Link>
           </Nav>
         </Container>
       </Navbar>

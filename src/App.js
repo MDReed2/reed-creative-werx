@@ -7,6 +7,7 @@ import Container from 'react-bootstrap/Container'
 import Nav from 'react-bootstrap/Nav'
 import Header from './Components/Header/Header'
 import Footer from './Components/Footer/Footer'
+import SoftwareDeveloper from './Components/SoftwareDeveloper/SoftwareDeveloper';
 
 
 function App() {
@@ -16,7 +17,7 @@ function App() {
       <NavbarComponent />
       <Routes>
         <Route path="/" element={<Header/>} />
-        <Route path="/software-development" />
+        <Route path="/software-development" element={<SoftwareDeveloper/>}/>
         <Route path="/photography" />
       </Routes>
       
