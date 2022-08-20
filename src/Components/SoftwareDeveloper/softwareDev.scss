@@ -1,6 +1,20 @@
 .software-dev {
   display: grid;
+  grid-template-columns: 80%;
   justify-content: center;
   min-height: 400px;
   width: 100%;
+
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .projects {
+    .card-section {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
 }
