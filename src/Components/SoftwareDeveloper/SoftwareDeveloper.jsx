@@ -1,11 +1,35 @@
 import React from 'react'
 import './softwareDev.scss'
 import CV from '../../Assets/MeshiaReed_Resume.pdf'
+import ME from '../../Assets/Images/comingSoon.png'
 import TRUEFOODIE from '../../Assets/Images/true-foodie.png'
 import JOTIT from '../../Assets/Images/jotit.png'
 import TICTACTOE from '../../Assets/Images/tictactoe.png'
+import { FaAward, FaUsers, FaFolder } from 'react-icons/fa'
+
 
 import Card from 'react-bootstrap/Card'
+
+const aboutData = [
+  {
+    id: 1,
+    icon: <FaAward />,
+    title: 'Experience',
+    description: 5,
+  },
+  {
+    id: 2,
+    icon: <FaUsers />,
+    title: 'Clients',
+    description: 11,
+  },
+  {
+    id: 3,
+    icon: <FaFolder/>,
+    title: 'Projects',
+    description: 15,
+  },
+]
 
 const data = [
   {
@@ -47,10 +71,43 @@ const SoftwareDeveloper = () => {
       </section>
       <section className='main'>
         <div className='about'>
-          
+          <div className='section_header_text'>
+            <h5>Get to Know</h5>
+            <h2>About</h2>
+          </div>
+          <div className='about_inner'>
+            <Card className='left-img'>
+              <Card.Img src={ME} />
+            </Card>
+            <div className='about_info_section'>
+              <div>
+                {aboutData.map(({id, icon, title, description}) => {
+                  return (
+                    <Card key={id}>
+                      <Card.Img />
+                      <Card.Body>
+                        <Card.Text>
+                          {icon}
+                          <h4>{title}</h4>
+                          <p>{description}</p>
+                        </Card.Text>
+                      </Card.Body>
+                    </Card>
+                  )
+                })}
+              </div>
+              <div>
+                <p>A devoted Software Engineer, who values taking initiative, being respectful, positively impacting organizations, fostering genuine connections with stakeholders, and among much more.</p>
+              </div>
+            </div>
+          </div>
         </div>
         <div className='experience'></div>
         <div className='projects'>
+          <div className='section_header_text'>
+            <h5>My Work</h5>
+            <h2>Projects</h2>
+          </div>
           <div className='card-section'>
             {data.map(({id, image, title, description, github, demo}) => {
               return (
