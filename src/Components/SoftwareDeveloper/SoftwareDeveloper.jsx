@@ -5,7 +5,7 @@ import ME from '../../Assets/Images/comingSoon.png'
 import TRUEFOODIE from '../../Assets/Images/true-foodie.png'
 import JOTIT from '../../Assets/Images/jotit.png'
 import TICTACTOE from '../../Assets/Images/tictactoe.png'
-import { FaAward, FaUsers, FaFolder } from 'react-icons/fa'
+import { FaAward, FaUsers, FaFolder, FaRegFolder } from 'react-icons/fa'
 
 
 import Card from 'react-bootstrap/Card'
@@ -25,7 +25,7 @@ const aboutData = [
   },
   {
     id: 3,
-    icon: <FaFolder/>,
+    icon: <FaRegFolder/>,
     title: 'Projects',
     description: 15,
   },
@@ -102,7 +102,9 @@ const SoftwareDeveloper = () => {
             </div>
           </div>
         </div>
-        <div className='experience'></div>
+        <div className='experience'>
+          <div></div>
+        </div>
         <div className='projects'>
           <div className='section_header_text'>
             <h5>My Work</h5>
@@ -116,6 +118,10 @@ const SoftwareDeveloper = () => {
                   <Card.Body>
                     <Card.Title>{title}</Card.Title>
                     <Card.Text>{description}</Card.Text>
+                    <div className='prjt-card-btns'>
+                      <a href={github}>Github</a>
+                      <a href={demo}>Demo</a>
+                    </div>
                   </Card.Body>
                 </Card>
               )

@@ -1,5 +1,9 @@
 @import "../../Theme/colors.scss";
 
+.card {
+  text-align: center;
+}
+
 .section_header_text {
   text-align: center;
 
@@ -38,9 +42,15 @@
       }
 
       .about_info_section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+
         > div {
           display: flex;
           flex-direction: row;
+          margin-bottom: 2.5rem;
         }
         .card {
           width: 100%;
@@ -61,13 +71,23 @@
     .card-section {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
+      padding: 2.5rem 0;
 
       .card {
         margin: 0px 7px;
 
         .card-body {
           display: flex;
+          flex-direction: column;
           justify-content: center;
+
+          .card-text {
+            font-size: small;
+
+            .prjt-card-btns {
+              display: inline;
+            }
+          }
         }
       }
     }
