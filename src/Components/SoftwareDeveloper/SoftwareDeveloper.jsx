@@ -5,7 +5,7 @@ import ME from '../../Assets/Images/comingSoon.png'
 import TRUEFOODIE from '../../Assets/Images/true-foodie.png'
 import JOTIT from '../../Assets/Images/jotit.png'
 import TICTACTOE from '../../Assets/Images/tictactoe.png'
-import { FaAward, FaUsers, FaFolder, FaRegFolder } from 'react-icons/fa'
+import { FaAward, FaUsers, FaRegFolder } from 'react-icons/fa'
 
 
 import Card from 'react-bootstrap/Card'
